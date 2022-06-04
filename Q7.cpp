@@ -3,7 +3,7 @@
 #include <iostream>
 #include <math.h>
 
-int lcm(float a, float b, int firstMulti = 1, int secondMulti = 1)
+int lcm(int a, int b, int firstMulti = 1, int secondMulti = 1)
 {
     // Base Case
     if (a * firstMulti == b * secondMulti)
@@ -19,7 +19,7 @@ int lcm(float a, float b, int firstMulti = 1, int secondMulti = 1)
 
 int main()
 {
-    float num, num2;
+    int num, num2;
     std::cout << "Enter two numbers: ";
     std::cin >> num >> num2;
     std::cout << lcm(num, num2);
